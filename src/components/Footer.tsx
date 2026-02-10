@@ -1,11 +1,42 @@
 import { Globe } from "lucide-react";
+import { Link } from "react-router-dom";
 
-const footerLinks = {
-  Platform: ["Browse Products", "Find Suppliers", "Post Request", "Trade Shows"],
-  Company: ["About Us", "Careers", "Press", "Blog"],
-  Support: ["Help Center", "Trust & Safety", "Dispute Resolution", "Contact"],
-  Legal: ["Terms of Service", "Privacy Policy", "Cookie Policy"],
-};
+const footerSections = [
+  {
+    title: "Platform",
+    links: [
+      { label: "Browse Products", to: "/products" },
+      { label: "Find Suppliers", to: "#" },
+      { label: "Post Request", to: "#" },
+      { label: "Trade Shows", to: "#" },
+    ],
+  },
+  {
+    title: "Compliance",
+    links: [
+      { label: "Compliance Hub", to: "/compliance" },
+      { label: "Trade & Export", to: "/compliance/trade" },
+      { label: "Tax & Invoicing", to: "/compliance/tax" },
+    ],
+  },
+  {
+    title: "Support",
+    links: [
+      { label: "Help Center", to: "#" },
+      { label: "Trust & Safety", to: "#" },
+      { label: "Dispute Resolution", to: "#" },
+      { label: "Contact", to: "#" },
+    ],
+  },
+  {
+    title: "Legal",
+    links: [
+      { label: "Terms of Service", to: "/compliance/terms" },
+      { label: "Privacy Policy", to: "/compliance/privacy" },
+      { label: "Cookie Policy", to: "#" },
+    ],
+  },
+];
 
 const Footer = () => {
   return (
@@ -26,15 +57,15 @@ const Footer = () => {
             </p>
           </div>
 
-          {Object.entries(footerLinks).map(([title, links]) => (
-            <div key={title}>
-              <h4 className="font-semibold text-sm mb-4 text-primary-foreground/80">{title}</h4>
+          {footerSections.map((section) => (
+            <div key={section.title}>
+              <h4 className="font-semibold text-sm mb-4 text-primary-foreground/80">{section.title}</h4>
               <ul className="space-y-2.5">
-                {links.map((link) => (
-                  <li key={link}>
-                    <a href="#" className="text-sm text-primary-foreground/40 hover:text-secondary transition-colors">
-                      {link}
-                    </a>
+                {section.links.map((link) => (
+                  <li key={link.label}>
+                    <Link to={link.to} className="text-sm text-primary-foreground/40 hover:text-secondary transition-colors">
+                      {link.label}
+                    </Link>
                   </li>
                 ))}
               </ul>
