@@ -1,4 +1,4 @@
-import { Search, Globe } from "lucide-react";
+import { Search } from "lucide-react";
 import { useState } from "react";
 import heroBg from "@/assets/hero-bg.jpg";
 
@@ -6,60 +6,62 @@ const HeroSection = () => {
   const [query, setQuery] = useState("");
 
   return (
-    <section className="relative min-h-[85vh] flex items-center overflow-hidden">
-      {/* Background image with overlay */}
+    <section className="relative min-h-screen flex items-center overflow-hidden">
+      {/* Background image with dark luxury overlay */}
       <div className="absolute inset-0">
         <img src={heroBg} alt="" className="w-full h-full object-cover" />
-        <div className="absolute inset-0 bg-hero-gradient opacity-90" />
-        <div className="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent" />
+        <div className="absolute inset-0 bg-hero-gradient opacity-95" />
       </div>
 
-      {/* Floating accent shapes */}
-      <div className="absolute top-20 right-20 w-64 h-64 rounded-full bg-secondary/10 blur-3xl" />
-      <div className="absolute bottom-20 left-10 w-48 h-48 rounded-full bg-secondary/5 blur-2xl" />
+      {/* Subtle decorative elements */}
+      <div className="absolute top-1/4 right-0 w-[500px] h-[500px] rounded-full bg-secondary/5 blur-[120px]" />
+      <div className="absolute bottom-0 left-0 w-[400px] h-[400px] rounded-full bg-accent/5 blur-[100px]" />
 
-      <div className="relative container mx-auto px-6 py-20">
+      {/* Thin decorative line */}
+      <div className="absolute top-0 left-1/2 w-px h-32 bg-gradient-to-b from-transparent via-secondary/30 to-transparent" />
+
+      <div className="relative container mx-auto px-6 py-32">
         <div className="max-w-3xl">
-          <div className="inline-flex items-center gap-2 rounded-full border border-secondary/30 bg-secondary/10 px-4 py-1.5 mb-8 animate-fade-up">
-            <Globe className="w-4 h-4 text-secondary" />
-            <span className="text-sm font-medium text-secondary">
-              190+ Countries · 50K+ Verified Suppliers
+          <div className="inline-flex items-center gap-3 mb-10 animate-fade-up">
+            <div className="w-8 h-px bg-secondary" />
+            <span className="text-xs font-medium tracking-luxe-wide uppercase text-secondary">
+              190+ Countries · Curated Suppliers
             </span>
           </div>
 
-          <h1 className="text-5xl md:text-7xl font-bold text-primary-foreground leading-[1.1] mb-6 animate-fade-up" style={{ animationDelay: "0.1s" }}>
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-display font-bold text-primary-foreground leading-[1.05] mb-8 animate-fade-up" style={{ animationDelay: "0.15s" }}>
             Trade Without{" "}
-            <span className="text-gradient-gold">Borders</span>
+            <span className="italic text-secondary">Limits</span>
           </h1>
 
-          <p className="text-lg md:text-xl text-primary-foreground/70 max-w-xl mb-10 animate-fade-up" style={{ animationDelay: "0.2s" }}>
+          <p className="text-base md:text-lg text-primary-foreground/50 max-w-lg mb-14 leading-relaxed animate-fade-up font-light" style={{ animationDelay: "0.3s" }}>
             Connect with verified importers, exporters, and manufacturers across
-            every continent. Buy, sell, and exchange globally — not just from one country.
+            every continent. A curated marketplace for discerning merchants.
           </p>
 
           {/* Search bar */}
-          <div className="animate-fade-up" style={{ animationDelay: "0.3s" }}>
-            <div className="flex flex-col sm:flex-row gap-3 max-w-2xl">
+          <div className="animate-fade-up" style={{ animationDelay: "0.45s" }}>
+            <div className="flex flex-col sm:flex-row gap-3 max-w-xl">
               <div className="relative flex-1">
-                <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-muted-foreground" />
+                <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
                 <input
                   type="text"
-                  placeholder="Search products, suppliers, or categories..."
+                  placeholder="Search products, suppliers..."
                   value={query}
                   onChange={(e) => setQuery(e.target.value)}
-                  className="w-full h-14 pl-12 pr-4 rounded-xl bg-card text-card-foreground placeholder:text-muted-foreground shadow-card-hover focus:outline-none focus:ring-2 focus:ring-secondary text-base"
+                  className="w-full h-14 pl-11 pr-4 rounded-sm bg-card/95 text-card-foreground placeholder:text-muted-foreground shadow-card-hover focus:outline-none focus:ring-1 focus:ring-secondary/50 text-sm backdrop-blur-sm border border-border/30"
                 />
               </div>
-              <button className="h-14 px-8 rounded-xl bg-gold-gradient text-secondary-foreground font-semibold text-base hover:opacity-90 transition-opacity shrink-0">
+              <button className="h-14 px-10 rounded-sm bg-cardinal-gradient text-secondary-foreground font-medium text-sm tracking-wider uppercase hover:opacity-90 transition-opacity shrink-0">
                 Search
               </button>
             </div>
 
-            <div className="flex flex-wrap gap-2 mt-4">
+            <div className="flex flex-wrap gap-3 mt-6">
               {["Electronics", "Textiles", "Agriculture", "Machinery", "Raw Materials"].map((tag) => (
                 <span
                   key={tag}
-                  className="text-sm px-3 py-1 rounded-full border border-primary-foreground/20 text-primary-foreground/60 hover:border-secondary/50 hover:text-secondary cursor-pointer transition-colors"
+                  className="text-xs px-4 py-1.5 tracking-wider uppercase border border-primary-foreground/10 text-primary-foreground/40 hover:border-secondary/40 hover:text-secondary cursor-pointer transition-all duration-300"
                 >
                   {tag}
                 </span>
@@ -69,18 +71,20 @@ const HeroSection = () => {
         </div>
 
         {/* Stats */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16 max-w-3xl animate-fade-up" style={{ animationDelay: "0.5s" }}>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-10 mt-24 max-w-3xl animate-fade-up" style={{ animationDelay: "0.6s" }}>
           {[
             { value: "190+", label: "Countries" },
             { value: "50K+", label: "Suppliers" },
             { value: "$2B+", label: "Trade Volume" },
             { value: "1M+", label: "Products" },
-          ].map((stat) => (
+          ].map((stat, i) => (
             <div key={stat.label} className="text-center">
-              <div className="text-2xl md:text-3xl font-bold text-secondary animate-count-up">
+              <div className="text-3xl md:text-4xl font-display font-bold text-accent animate-count-up">
                 {stat.value}
               </div>
-              <div className="text-sm text-primary-foreground/50 mt-1">{stat.label}</div>
+              <div className="text-[11px] tracking-luxe-wide uppercase text-primary-foreground/30 mt-2">
+                {stat.label}
+              </div>
             </div>
           ))}
         </div>

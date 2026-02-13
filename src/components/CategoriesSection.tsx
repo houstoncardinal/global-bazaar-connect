@@ -13,13 +13,18 @@ const categories = [
 
 const CategoriesSection = () => {
   return (
-    <section className="py-20 bg-background">
+    <section className="py-24 bg-background">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-14">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-3">
+        <div className="text-center mb-16">
+          <div className="flex items-center justify-center gap-3 mb-4">
+            <div className="w-8 h-px bg-secondary" />
+            <span className="text-xs tracking-luxe-wide uppercase text-secondary font-medium">Categories</span>
+            <div className="w-8 h-px bg-secondary" />
+          </div>
+          <h2 className="text-3xl md:text-5xl font-display font-bold text-foreground mb-4">
             Browse by Category
           </h2>
-          <p className="text-muted-foreground text-lg max-w-xl mx-auto">
+          <p className="text-muted-foreground max-w-lg mx-auto">
             Explore millions of products across every major industry
           </p>
         </div>
@@ -28,14 +33,14 @@ const CategoriesSection = () => {
           {categories.map((cat, i) => (
             <div
               key={cat.name}
-              className="group relative p-6 rounded-2xl bg-card shadow-card hover:shadow-card-hover border border-border/50 cursor-pointer transition-all duration-300 hover:-translate-y-1 animate-fade-up"
-              style={{ animationDelay: `${i * 0.05}s` }}
+              className="group relative p-7 bg-card shadow-card hover:shadow-card-hover border border-border/50 cursor-pointer transition-all duration-500 hover:-translate-y-1 animate-fade-up"
+              style={{ animationDelay: `${i * 0.06}s` }}
             >
-              <div className="w-12 h-12 rounded-xl bg-secondary/10 flex items-center justify-center mb-4 group-hover:bg-secondary/20 transition-colors">
-                <cat.icon className="w-6 h-6 text-secondary" />
+              <div className="w-11 h-11 rounded-sm bg-secondary/8 flex items-center justify-center mb-5 group-hover:bg-secondary/15 transition-colors duration-300">
+                <cat.icon className="w-5 h-5 text-secondary" />
               </div>
-              <h3 className="font-semibold text-card-foreground mb-1">{cat.name}</h3>
-              <p className="text-sm text-muted-foreground">{cat.count}</p>
+              <h3 className="font-display font-semibold text-card-foreground mb-1">{cat.name}</h3>
+              <p className="text-xs text-muted-foreground tracking-wide">{cat.count}</p>
             </div>
           ))}
         </div>

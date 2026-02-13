@@ -114,7 +114,7 @@ const TradeCompliance = () => {
               <h3 className="font-semibold text-foreground mb-1">Important Notice</h3>
               <p className="text-sm text-muted-foreground leading-relaxed">
                 Violations of trade sanctions and export controls can result in severe criminal and civil penalties. 
-                Users are responsible for ensuring their own compliance with applicable laws. GlobeTrade's screening 
+                Users are responsible for ensuring their own compliance with applicable laws. CardinalMerchant's screening 
                 is a supplementary measure and does not substitute for your own due diligence obligations.
               </p>
             </div>
