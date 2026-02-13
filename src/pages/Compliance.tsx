@@ -112,9 +112,9 @@ const Compliance = () => {
             <h1 className="text-3xl md:text-5xl font-bold text-primary-foreground mb-3">
               Global Compliance Hub
             </h1>
-            <p className="text-lg text-primary-foreground/60 max-w-2xl">
+            <p className="text-primary-foreground/40 max-w-2xl">
               Operating across 190+ countries requires careful attention to local regulations. 
-              Here's how GlobeTrade stays compliant — and how you can too.
+              Here's how CardinalMerchant stays compliant — and how you can too.
             </p>
           </div>
         </div>
@@ -214,8 +214,8 @@ const Compliance = () => {
                 This compliance hub is for informational purposes only and does not constitute legal advice. 
                 Regulations change frequently, and requirements vary by jurisdiction, product type, and business model. 
                 We strongly recommend consulting qualified legal counsel in each applicable jurisdiction before 
-                engaging in cross-border trade. GlobeTrade makes every effort to keep this information current 
-                but cannot guarantee its completeness or accuracy.
+                engaging in cross-border trade. 
+                but cannot guarantee its completeness or accuracy. CardinalMerchant makes every effort to keep this information current.
               </p>
             </div>
           </div>

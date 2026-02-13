@@ -173,7 +173,7 @@ const TaxCompliance = () => {
               <p className="text-sm text-muted-foreground leading-relaxed">
                 Tax obligations depend on your specific business structure, transaction types, and jurisdictions involved. 
                 This page provides general guidance only. Always consult a qualified tax advisor for your specific situation. 
-                GlobeTrade does not provide tax advice and is not responsible for users' tax compliance.
+                CardinalMerchant does not provide tax advice and is not responsible for users' tax compliance.
               </p>
             </div>
           </div>

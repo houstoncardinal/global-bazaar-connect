@@ -6,7 +6,7 @@ import Footer from "@/components/Footer";
 const sections = [
   {
     title: "1. Acceptance of Terms",
-    content: "By accessing or using GlobeTrade, you agree to these Terms of Service. If you are using GlobeTrade on behalf of a business, you represent that you have authority to bind that entity. If you do not agree, do not use the platform.",
+    content: "By accessing or using CardinalMerchant, you agree to these Terms of Service. If you are using CardinalMerchant on behalf of a business, you represent that you have authority to bind that entity. If you do not agree, do not use the platform.",
   },
   {
     title: "2. Eligibility",
@@ -19,7 +19,7 @@ const sections = [
   },
   {
     title: "3. User Accounts & Verification",
-    content: "Suppliers undergo a verification process including business registration checks, identity verification, and, where applicable, trade license validation. Users are responsible for maintaining accurate account information and safeguarding credentials. GlobeTrade reserves the right to suspend unverified or fraudulent accounts.",
+    content: "Suppliers undergo a verification process including business registration checks, identity verification, and, where applicable, trade license validation. Users are responsible for maintaining accurate account information and safeguarding credentials. CardinalMerchant reserves the right to suspend unverified or fraudulent accounts.",
   },
   {
     title: "4. Marketplace Rules",
@@ -32,7 +32,7 @@ const sections = [
   },
   {
     title: "5. Transactions & Payments",
-    content: "GlobeTrade facilitates connections between buyers and suppliers. Transaction terms (pricing, shipping, payment) are agreed between parties. GlobeTrade may offer escrow or payment facilitation services subject to separate terms. All parties remain responsible for their own tax obligations.",
+    content: "CardinalMerchant facilitates connections between buyers and suppliers. Transaction terms (pricing, shipping, payment) are agreed between parties. CardinalMerchant may offer escrow or payment facilitation services subject to separate terms. All parties remain responsible for their own tax obligations.",
   },
   {
     title: "6. Consumer Protection",
@@ -45,19 +45,19 @@ const sections = [
   },
   {
     title: "7. Dispute Resolution",
-    content: "GlobeTrade provides an internal dispute resolution mechanism for transaction-related issues. If unresolved, parties may pursue mediation, arbitration, or court proceedings as applicable. EU consumers may use the EU Online Dispute Resolution platform. Choice of law and jurisdiction are governed by the applicable regional provisions below.",
+    content: "CardinalMerchant provides an internal dispute resolution mechanism for transaction-related issues. If unresolved, parties may pursue mediation, arbitration, or court proceedings as applicable. EU consumers may use the EU Online Dispute Resolution platform.",
   },
   {
     title: "8. Limitation of Liability",
-    content: "GlobeTrade is a marketplace platform and is not a party to transactions between buyers and suppliers. To the maximum extent permitted by law, GlobeTrade's liability is limited to the fees paid to us in the 12 months preceding the claim. This limitation does not affect statutory consumer rights that cannot be waived.",
+    content: "CardinalMerchant is a marketplace platform and is not a party to transactions between buyers and suppliers. To the maximum extent permitted by law, CardinalMerchant's liability is limited to the fees paid to us in the 12 months preceding the claim. This limitation does not affect statutory consumer rights that cannot be waived.",
   },
   {
     title: "9. Termination",
-    content: "Either party may terminate the account relationship at any time. GlobeTrade may suspend or terminate accounts that violate these terms, applicable laws, or sanctions requirements. Upon termination, transaction data is retained as required by law.",
+    content: "Either party may terminate the account relationship at any time. CardinalMerchant may suspend or terminate accounts that violate these terms, applicable laws, or sanctions requirements. Upon termination, transaction data is retained as required by law.",
   },
   {
     title: "10. Governing Law",
-    content: "These terms are governed by the laws of the jurisdiction where GlobeTrade's principal entity is established, except where mandatory local consumer protection laws override this choice. Separate regional addenda may apply for EU, UK, US, and Brazilian users.",
+    content: "These terms are governed by the laws of the jurisdiction where CardinalMerchant's principal entity is established, except where mandatory local consumer protection laws override this choice.",
   },
 ];
 

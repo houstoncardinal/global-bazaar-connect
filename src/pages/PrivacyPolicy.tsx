@@ -6,7 +6,7 @@ import Footer from "@/components/Footer";
 const sections = [
   {
     title: "1. Introduction",
-    content: `GlobeTrade ("we," "our," or "us") is committed to protecting your personal data. This Privacy Policy explains how we collect, use, store, and share your information when you use our global trade marketplace platform. We process data in compliance with applicable data protection laws including the EU General Data Protection Regulation (GDPR), the California Consumer Privacy Act (CCPA/CPRA), Brazil's Lei Geral de Proteção de Dados (LGPD), South Africa's Protection of Personal Information Act (POPIA), and other applicable local privacy laws.`,
+    content: `CardinalMerchant ("we," "our," or "us") is committed to protecting your personal data. This Privacy Policy explains how we collect, use, store, and share your information when you use our global trade marketplace platform. We process data in compliance with applicable data protection laws including the EU General Data Protection Regulation (GDPR), the California Consumer Privacy Act (CCPA/CPRA), Brazil's Lei Geral de Proteção de Dados (LGPD), South Africa's Protection of Personal Information Act (POPIA), and other applicable local privacy laws.`,
   },
   {
     title: "2. Data We Collect",
@@ -74,15 +74,15 @@ const sections = [
     title: "9. Region-Specific Provisions",
     content: null,
     subsections: [
-      { region: "🇪🇺 EU/EEA (GDPR)", detail: "Data Protection Officer contactable at dpo@globetrade.com. We maintain Records of Processing Activities (ROPA) and conduct Data Protection Impact Assessments (DPIA) for high-risk processing." },
-      { region: "🇺🇸 California (CCPA/CPRA)", detail: "California residents can opt out of the \"sale\" or \"sharing\" of personal information. We do not sell personal data. Categories of data collected and purposes are disclosed above." },
+      { region: "🇪🇺 EU/EEA (GDPR)", detail: "Data Protection Officer contactable at dpo@cardinalmerchant.com. We maintain Records of Processing Activities (ROPA) and conduct Data Protection Impact Assessments (DPIA) for high-risk processing." },
+      { region: "🇺🇸 California (CCPA/CPRA)", detail: "California residents can opt out of the \"sale\" or \"sharing\" of personal information. We do not sell personal data." },
       { region: "🇧🇷 Brazil (LGPD)", detail: "Processing is conducted under applicable legal bases per LGPD Art. 7. Data subject rights can be exercised through our platform or by contacting our DPO." },
       { region: "🇿🇦 South Africa (POPIA)", detail: "We are registered with the Information Regulator. Processing complies with POPIA conditions, and cross-border transfers follow Section 72 requirements." },
     ],
   },
   {
     title: "10. Contact & DPO",
-    content: "For privacy inquiries, data subject requests, or complaints:\n\n**Data Protection Officer**: dpo@globetrade.com\n**General Privacy**: privacy@globetrade.com\n\nWe respond to all data subject requests within 30 days (or shorter if required by local law).",
+    content: "For privacy inquiries, data subject requests, or complaints:\n\n**Data Protection Officer**: dpo@cardinalmerchant.com\n**General Privacy**: privacy@cardinalmerchant.com\n\nWe respond to all data subject requests within 30 days (or shorter if required by local law).",
   },
 ];
 
